@@ -1,0 +1,77 @@
+body{
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                          'header header header header'
+                         'section section section section'
+                         'footer footer footer footer';
+grid-template-columns: 25vw 25vw 25vw 25vw;
+grid-template-rows: 10vh 90vh 60vh 10vh;
+margin: 0;
+}
+
+nav{
+    background-color:#704483;
+    /* display: flex; */
+    grid-area: navbar;
+}
+
+nav a img{
+    height: 35px;
+    width: 35px; 
+    
+}
+
+nav h1{
+    color:white;
+    text-align: center;
+    
+}
+
+
+header{
+    align-items: center;
+    background-image: url("../static/imagens/banner.jpeg");
+    /* display: flex; */
+    grid-area: header;
+}
+
+header h3{
+    color: white;
+    margin: 50px;
+    text-align: center;
+
+}
+
+section{
+    /* display: flex; */
+    justify-content: space-around;
+    grid-area: section;
+}
+
+section h1, h4{
+    color: #704483;
+    text-align: center;
+}
+
+section p{
+    margin: 18px;
+}
+
+footer{
+    align-items: center;
+    background-color:#704483;
+    display: flex;
+    grid-area: footer;
+}
+
+footer h5{
+    color:#979797;
+    text-align: center;
+}
+
+footer img{   
+    align-items: center;
+    height: 35px;
+    width: 35px; 
+    
+}
